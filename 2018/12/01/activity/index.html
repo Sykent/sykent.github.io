@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 2px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="活动图Hello World">
+<meta property="og:type" content="article">
+<meta property="og:title" content="plantuml 实例">
+<meta property="og:url" content="http://yoursite.com/2018/12/01/activity/index.html">
+<meta property="og:site_name" content="Sykent Lao">
+<meta property="og:description" content="活动图Hello World">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/i_98pSd9LoZFByf9iUQo2id8B5O0elmyXPJKjCoyL22BgpYrg2orI45BAmSeKAobPGq0">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/Aov9B2hXil98pSd9LoZFByf9iUQo2id8B5O0elmyXPJKjCoyL22BgpYrg2orI45BAmSeKAobPSrLN99V0000">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/Aov9B2hXil98pSd9LoZFByf9iUQo2id8B5O0elmyXPJKjCoyL22BgpYrg2orI45BAmSeKAobPSsLcfS20000">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/JOmn3W8n30HxlsBBt1UWeEGJI96Lyu6bu1onEIcyddJGpep6WtkGRaZNGpzGy-1QBmlY8OOqn1SwxRqLSSSqkDcgVE_yz3D9TK6ozfSqguEGiylhBLOaPx2j4t09FJJ61By1PDusycZx5m00">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/Aov9B2hXoapJICxFIyaioSpFKt3KL2Z9ICtJg4mjrkHIKB0AIQqeCRJcIiqfJaLHvuH5dH4MTSvOr1bZKUU2HPq9H9r6Ndv9HcPUEbnS0IGAb0FgJUCgBial0000">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/BSf12e0m30J0UrwHetx17dpBGfPQiBOa0RyleiU1YOIdE2UHehevOMf8xELbvKL7KgsXEdeK-RFUHpkvzE7y_YgHOpu0">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/7Skn3O0m34JHtbEuX1L8mIm7FeL88I37WlLHAB-UVWzuo7kKoiaGK3mejM2hN6THNPmm7P96PJOwWce5sN7s96psxs8Cx8VqkEuF">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/Aov9B2hXAi_8p4dLICv8JSvMI0CoYpEhKZKLCeiLDFBoInHISmjAAkqrkHGKh8fI4rD02govKlDImBeKDC3IODdadFpYL0M8V759VW40">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/Aov9B2hXoapJo2tDASaiACfFJYqkpY-orrGeoKZDKz2eJ2tMv59GICiloWPI2WfM8KMfYIMvgNab2eRMK0c5nFJ4p3nqQIEyqiOWsTIy58Z9gJd5gGeQUVaWgz3K8BWcrbn03PbfNCKb-GK0">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/DOwn2iCm34HtVuN8r7O9xPYaMRfqQBVyW98eiS6LWYtw_PKD5GS7Z-DqMJ6fwpQHQ--sAAY1Ts1HWaYRTfCF6KnOMUzgzDQxcaXXz-e0_Y5Xo9I-68srRGnCPiWhBCY65c75m33CutDwluPs7etUxSmkyC0OotFr11zIRsrDsNKwDwNyIEB379HMHrPP1hYiSlm0">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/9Oqn3iCm30Dtlq90V-5EtJfsw0UCMBQ51f8XAlzFud8X0G9tYEAHCkwYwTQTWMTwl2q-eh_iNAfefysqIVSIOafDTaRw3WR_Ds7OiLVYAi6LIb0C0KqJZGlsMid4kbZMhfjlsxPa29id">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/DOv93i8m34NtEOKbDX2rbHXMHEefs2348ctSGKHn5Rj0RqywiFJ_J--RnKPHruReQ5HUmfr6g6s0OHGG_0fG01iZVTYeljaBiXn0EWmA87_iAZ_YCo_JCIjEPatRY1WoPxb3brguTRZAaZaHrZD1XS3uncWz-3uWptbme7NA9gt1KsYXA0gpkSz6eMVypzhwbJaIMGOsv9AGuFf6BI_OAQl8BpKB3Jy0">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/Aov9B2hXiWhEpqrLI4mkoIpBBAcqvj9mrEHAIIr9JCu0CwtyIp9IYn3o0000">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/FOn13iCW30JllCBl82_8jJzm4q0hfGOv9ZrK-NjDaUhZU7OQgy5GXLQ1qIUGNzJ4EsrLCWfb76cP64E1M5BXWovMy7Cyxz3-cKSNWPHVARxP1xagzJFfNF8sj16CJPquTU75azxXjDg-">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/gmakpypDISnBDQpXAYv9B2hXiahBppUqvgfHTimhoImiJGtFo2n9hO4fCwe1Ap2o1bF6G7L81e24J924e8fDhO56vnS00000">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/ioekIImgiUPAoo_Avb9Gi4hBppUqXZAC8C8AYUc9cNbGCMEGP4fgIM9o1bTgNWfOMsQQ1b36H5EX92CLfiuKLLrc6bJS34aS8c9kpLLSaby00000">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/TOwn2i9044Jx_Oej4op4mcPFyn7fBPPa4vSSU-7k20hntmrSR4IxOTxm66g5-wS3CddaAjGhK2kTwA8sEaYprmn8nbEbzMLBt4tRgYa4UMIrlIryrm06moIBHFRerMJTc29TKV60fzjVayJuCV4lFeHm_AeK6po_8EKmWrYFvJGDQfhkxWq0">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/Aov9B2hXoapJA4ukIatDKx1HC3SoAD1KACb8pTEeJ2tMv59Gi7goj-_vwlNMNAavnQa8fNQsOBKAQceACCss2eO65fZQTwo5QrU0wuOg1IbukNe6H45UIcOQLt59VW40">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/Aov9B2hXoapJo4tDpI-gLB1HC77NL2Z9ICtJg4mjrkHIKB1wihVl-UhrrbofESMf28Lsja2L2cfg2X2-ZHc6jXrhuTeKa7G15OAaNwwU0P7EIybCuoekoIy00000">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/Aov9B2hXoapJAChFLR1HC3HprrGeoKZDqwXCBTRaKb2mUhAtx_dgzTPSgJd5gJ1bjWh6HWfgQWeWZfsjcGcwbXrhuLeKm3hiW6f0CYzNpu38vALafd4Lb-GN0000">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/Aov9B2hXoapJIFNrTLQmjLK8TGisqZFGL2Z9ICtJg4mjrkHIKB1wicFjyzNhhRbISufJ5L2L6e8Ll5mz0w8WBoKpZQku9By00000">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/LL5BJiCm4Dtx5BDhik40oO959H2xgfp0SYQDLMC7puIgQoI4GDo38t0Wkk0M-9UcbQB4clV9csTYwLaqQwFL7WZzYq66GThE86pnUKBYgcv5O_40eznXAtHVRSBXnjb7L9FNV5mFgFOry82sOZzXBG2QmdcmEXa019scE-SFqdUtXMrTv4QsTmg9G3dBtXbgqpX8ua3R2M7C36rtHGndDR4Rqm5jftinIpLj7F7ygoDIPY_P8fop1QaXN1mNpZqkbEH-2Mx327t6CvfjUXa-jIXnLhy_dwUlZx_Nx_2StjzMiSBEWSTEUrHytgT4R6PWthbDjhd2eEklEpmlrfHoWt6wjvJgQgqc1quN2OnFev6C5-7JExRv3m00">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/Aov9B2hXidgwf-7fycvhhgBKWjH48F_5libFMvU-sBBiQV_sfvDwdgvlUxwWqPhBwddJpgVjkv_FtFrqxrIOQeNoZCoSL8sd_OkVx5xoREtYvmlNlTypNrD1rquXBvzBrwuojHYa4wpdMSU4frtphRcAI_8B0000">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/LP7DJi9058NNdQSOMPM56vUT82zYGgeTf4apRTeYOMTO28I02mWXiGrYua-Y0WQHyYSlqndQbQ_Wq944DvF9t7FlFTyPnrLj5oZHQCO-AWZeUPck5hJsnUu-MNUSJKEtW0cKozY1PmGMBKrrSSujMpYJEKa3R3Xurx9SHCEXQFbPzG-Qqa3YTSkqSbVOTdIJX46BUM_K6uT1CmoksVrCgF_4ku50EZw5n4H0SbpJucz4q_F9AYWJCmqKk5sscTz7GCEkUb40Gg3GTPlMc_5W6liFh3UAdxhyZe2DBQnoHBgQ2uTqD8z6FXlS8E1OXivBsygSLfVRrmPjJeG69RwPLu_Rtwprc0MQMIA6gMgvectapbrob4cb_dDAIZIRiEbjz5pZUyEW4QtNI109tq915vrjvuK65Uejq1ukyG7LIrKdUpTS6csg22ZXngVllOC8QMqi8aGxSYWO12Ki5NG3ouSJalz80WNyv5OvDO_r5m00">
+<meta property="og:updated_time" content="2019-01-18T11:32:23.814Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="plantuml 实例">
+<meta name="twitter:description" content="活动图Hello World">
+<meta name="twitter:image" content="http://www.plantuml.com/plantuml/svg/i_98pSd9LoZFByf9iUQo2id8B5O0elmyXPJKjCoyL22BgpYrg2orI45BAmSeKAobPGq0">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/12/01/activity/">
+
+
+
+
+
+  <title>plantuml 实例 | Sykent Lao</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<!--新增代码 start -->
+
+<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+
+<!--新增代码 end -->
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <link rel="stylesheet" href="/dist/APlayer.min.css">
+<div id="aplayer"></div>
+<script type="text/javascript" src="/dist/APlayer.min.js"></script>
+<script type="text/javascript" src="/dist/music.js"></script>
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Sykent Lao</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">一人独钓一江秋</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-pencil">
+          <a href="/pencil" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-pencil"></i> <br>
+            
+            随笔
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/01/activity/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Sykent">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://i0.hdslb.com/bfs/face/98f9648fa7dc6752f5dfb9897cc1a189db16178e.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sykent Lao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">plantuml 实例</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-01T00:00:00+08:00">
+                2018-12-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">笔记</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/笔记/plantuml/" itemprop="url" rel="index">
+                    <span itemprop="name">plantuml</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/12/01/activity/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/01/activity/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/12/01/activity/" class="leancloud_visitors" data-flag-title="plantuml 实例">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  413
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="活动图Hello-World"><a href="#活动图Hello-World" class="headerlink" title="活动图Hello World"></a>活动图Hello World</h3><img src="http://www.plantuml.com/plantuml/svg/i_98pSd9LoZFByf9iUQo2id8B5O0elmyXPJKjCoyL22BgpYrg2orI45BAmSeKAobPGq0">
+<a id="more"></a>
+<h3 id="开始-结束"><a href="#开始-结束" class="headerlink" title="开始/结束"></a>开始/结束</h3><p>你可以使用关键字start和stop表示图示的开始和结束。<br><img src="http://www.plantuml.com/plantuml/svg/Aov9B2hXil98pSd9LoZFByf9iUQo2id8B5O0elmyXPJKjCoyL22BgpYrg2orI45BAmSeKAobPSrLN99V0000"></p>
+<p>也可以使用 end 关键字。<br><img src="http://www.plantuml.com/plantuml/svg/Aov9B2hXil98pSd9LoZFByf9iUQo2id8B5O0elmyXPJKjCoyL22BgpYrg2orI45BAmSeKAobPSsLcfS20000"></p>
+<h3 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h3><p>在图示中可以使用关键字if，then和else设置分支测试。标注文字则放在括号中。<br><img src="http://www.plantuml.com/plantuml/svg/JOmn3W8n30HxlsBBt1UWeEGJI96Lyu6bu1onEIcyddJGpep6WtkGRaZNGpzGy-1QBmlY8OOqn1SwxRqLSSSqkDcgVE_yz3D9TK6ozfSqguEGiylhBLOaPx2j4t09FJJ61By1PDusycZx5m00"></p>
+<p>在图示中可以使用关键字if，then和else设置分支测试。标注文字则放在括号中。<br><img src="http://www.plantuml.com/plantuml/svg/Aov9B2hXoapJICxFIyaioSpFKt3KL2Z9ICtJg4mjrkHIKB0AIQqeCRJcIiqfJaLHvuH5dH4MTSvOr1bZKUU2HPq9H9r6Ndv9HcPUEbnS0IGAb0FgJUCgBial0000"></p>
+<h3 id="重复循环"><a href="#重复循环" class="headerlink" title="重复循环"></a>重复循环</h3><p>你可以使用关键字repeat和repeat while进行重复循环<br><img src="http://www.plantuml.com/plantuml/svg/BSf12e0m30J0UrwHetx17dpBGfPQiBOa0RyleiU1YOIdE2UHehevOMf8xELbvKL7KgsXEdeK-RFUHpkvzE7y_YgHOpu0"></p>
+<h3 id="while-循环"><a href="#while-循环" class="headerlink" title="while 循环"></a>while 循环</h3><p>可以使用关键字while和end while进行while循环。<br><img src="http://www.plantuml.com/plantuml/svg/7Skn3O0m34JHtbEuX1L8mIm7FeL88I37WlLHAB-UVWzuo7kKoiaGK3mejM2hN6THNPmm7P96PJOwWce5sN7s96psxs8Cx8VqkEuF"></p>
+<p>还可以在关键字endwhile后添加标注，还有一种方式是使用关键字is。<br><img src="http://www.plantuml.com/plantuml/svg/Aov9B2hXAi_8p4dLICv8JSvMI0CoYpEhKZKLCeiLDFBoInHISmjAAkqrkHGKh8fI4rD02govKlDImBeKDC3IODdadFpYL0M8V759VW40"></p>
+<h3 id="并行处理"><a href="#并行处理" class="headerlink" title="并行处理"></a>并行处理</h3><p>你可以使用关键字fork，fork again和end fork表示并行处理。<br><img src="http://www.plantuml.com/plantuml/svg/Aov9B2hXoapJo2tDASaiACfFJYqkpY-orrGeoKZDKz2eJ2tMv59GICiloWPI2WfM8KMfYIMvgNab2eRMK0c5nFJ4p3nqQIEyqiOWsTIy58Z9gJd5gGeQUVaWgz3K8BWcrbn03PbfNCKb-GK0"></p>
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>文本格式支持creole wiki语法。<br>A note can be floating, using floating keyword.<br><img src="http://www.plantuml.com/plantuml/svg/DOwn2iCm34HtVuN8r7O9xPYaMRfqQBVyW98eiS6LWYtw_PKD5GS7Z-DqMJ6fwpQHQ--sAAY1Ts1HWaYRTfCF6KnOMUzgzDQxcaXXz-e0_Y5Xo9I-68srRGnCPiWhBCY65c75m33CutDwluPs7etUxSmkyC0OotFr11zIRsrDsNKwDwNyIEB379HMHrPP1hYiSlm0"></p>
+<h3 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h3><p>你可以为活动(activity)指定一种颜色。<br><img src="http://www.plantuml.com/plantuml/svg/9Oqn3iCm30Dtlq90V-5EtJfsw0UCMBQ51f8XAlzFud8X0G9tYEAHCkwYwTQTWMTwl2q-eh_iNAfefysqIVSIOafDTaRw3WR_Ds7OiLVYAi6LIb0C0KqJZGlsMid4kbZMhfjlsxPa29id"></p>
+<h3 id="箭头"><a href="#箭头" class="headerlink" title="箭头"></a>箭头</h3><p>使用-&gt;标记，你可以给箭头添加文字或者修改箭头颜色。<br>同时，你也可以选择点状 (dotted)，条状(dashed)，加粗或者是隐式箭头<br><img src="http://www.plantuml.com/plantuml/svg/DOv93i8m34NtEOKbDX2rbHXMHEefs2348ctSGKHn5Rj0RqywiFJ_J--RnKPHruReQ5HUmfr6g6s0OHGG_0fG01iZVTYeljaBiXn0EWmA87_iAZ_YCo_JCIjEPatRY1WoPxb3brguTRZAaZaHrZD1XS3uncWz-3uWptbme7NA9gt1KsYXA0gpkSz6eMVypzhwbJaIMGOsv9AGuFf6BI_OAQl8BpKB3Jy0"></p>
+<h3 id="Connector"><a href="#Connector" class="headerlink" title="Connector"></a>Connector</h3><p>You can use parentheses to denote connector.<br><img src="http://www.plantuml.com/plantuml/svg/Aov9B2hXiWhEpqrLI4mkoIpBBAcqvj9mrEHAIIr9JCu0CwtyIp9IYn3o0000"></p>
+<h3 id="组合-grouping"><a href="#组合-grouping" class="headerlink" title="组合(grouping)"></a>组合(grouping)</h3><p>通过定义分区(partition)，你可以把多个活动组合(group)在一起。</p>
+<img src="http://www.plantuml.com/plantuml/svg/FOn13iCW30JllCBl82_8jJzm4q0hfGOv9ZrK-NjDaUhZU7OQgy5GXLQ1qIUGNzJ4EsrLCWfb76cP64E1M5BXWovMy7Cyxz3-cKSNWPHVARxP1xagzJFfNF8sj16CJPquTU75azxXjDg-">
+<h3 id="泳道-Swimlanes"><a href="#泳道-Swimlanes" class="headerlink" title="泳道(Swimlanes)"></a>泳道(Swimlanes)</h3><p>你可以使用管道符|来定义泳道。<br>还可以改变泳道的颜色。<br><img src="http://www.plantuml.com/plantuml/svg/gmakpypDISnBDQpXAYv9B2hXiahBppUqvgfHTimhoImiJGtFo2n9hO4fCwe1Ap2o1bF6G7L81e24J924e8fDhO56vnS00000"></p>
+<h3 id="分离-detach"><a href="#分离-detach" class="headerlink" title="分离(detach)"></a>分离(detach)</h3><p>可以使用关键字detach移除箭头。<br><img src="http://www.plantuml.com/plantuml/svg/ioekIImgiUPAoo_Avb9Gi4hBppUqXZAC8C8AYUc9cNbGCMEGP4fgIM9o1bTgNWfOMsQQ1b36H5EX92CLfiuKLLrc6bJS34aS8c9kpLLSaby00000"></p>
+<h3 id="特殊领域语言-SDL"><a href="#特殊领域语言-SDL" class="headerlink" title="特殊领域语言(SDL)"></a>特殊领域语言(SDL)</h3><p>通过修改活动标签最后的分号分隔符(;)，可以为活动设置不同的形状。</p>
+<ul>
+<li>|</li>
+<li>&lt;</li>
+<li>></li>
+<li>/</li>
+<li>]</li>
+<li>}<img src="http://www.plantuml.com/plantuml/svg/TOwn2i9044Jx_Oej4op4mcPFyn7fBPPa4vSSU-7k20hntmrSR4IxOTxm66g5-wS3CddaAjGhK2kTwA8sEaYprmn8nbEbzMLBt4tRgYa4UMIrlIryrm06moIBHFRerMJTc29TKV60fzjVayJuCV4lFeHm_AeK6po_8EKmWrYFvJGDQfhkxWq0">
+</li>
+</ul>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><h4 id="按照分辨率划分"><a href="#按照分辨率划分" class="headerlink" title="按照分辨率划分"></a>按照分辨率划分</h4><img src="http://www.plantuml.com/plantuml/svg/Aov9B2hXoapJA4ukIatDKx1HC3SoAD1KACb8pTEeJ2tMv59Gi7goj-_vwlNMNAavnQa8fNQsOBKAQceACCss2eO65fZQTwo5QrU0wuOg1IbukNe6H45UIcOQLt59VW40">
+<h4 id="按照内存划分"><a href="#按照内存划分" class="headerlink" title="按照内存划分"></a>按照内存划分</h4><img src="http://www.plantuml.com/plantuml/svg/Aov9B2hXoapJo4tDpI-gLB1HC77NL2Z9ICtJg4mjrkHIKB1wihVl-UhrrbofESMf28Lsja2L2cfg2X2-ZHc6jXrhuTeKa7G15OAaNwwU0P7EIybCuoekoIy00000">
+<h4 id="闪存划分"><a href="#闪存划分" class="headerlink" title="闪存划分"></a>闪存划分</h4><img src="http://www.plantuml.com/plantuml/svg/Aov9B2hXoapJAChFLR1HC3HprrGeoKZDqwXCBTRaKb2mUhAtx_dgzTPSgJd5gJ1bjWh6HWfgQWeWZfsjcGcwbXrhuLeKm3hiW6f0CYzNpu38vALafd4Lb-GN0000">
+<p>`</p>
+<img src="http://www.plantuml.com/plantuml/svg/Aov9B2hXoapJIFNrTLQmjLK8TGisqZFGL2Z9ICtJg4mjrkHIKB1wicFjyzNhhRbISufJ5L2L6e8Ll5mz0w8WBoKpZQku9By00000">
+<h3 id="一个完整的例子"><a href="#一个完整的例子" class="headerlink" title="一个完整的例子"></a>一个完整的例子</h3><img src="http://www.plantuml.com/plantuml/svg/LL5BJiCm4Dtx5BDhik40oO959H2xgfp0SYQDLMC7puIgQoI4GDo38t0Wkk0M-9UcbQB4clV9csTYwLaqQwFL7WZzYq66GThE86pnUKBYgcv5O_40eznXAtHVRSBXnjb7L9FNV5mFgFOry82sOZzXBG2QmdcmEXa019scE-SFqdUtXMrTv4QsTmg9G3dBtXbgqpX8ua3R2M7C36rtHGndDR4Rqm5jftinIpLj7F7ygoDIPY_P8fop1QaXN1mNpZqkbEH-2Mx327t6CvfjUXa-jIXnLhy_dwUlZx_Nx_2StjzMiSBEWSTEUrHytgT4R6PWthbDjhd2eEklEpmlrfHoWt6wjvJgQgqc1quN2OnFev6C5-7JExRv3m00">
+<h3 id="登录流程图"><a href="#登录流程图" class="headerlink" title="登录流程图"></a>登录流程图</h3><img src="http://www.plantuml.com/plantuml/svg/Aov9B2hXidgwf-7fycvhhgBKWjH48F_5libFMvU-sBBiQV_sfvDwdgvlUxwWqPhBwddJpgVjkv_FtFrqxrIOQeNoZCoSL8sd_OkVx5xoREtYvmlNlTypNrD1rquXBvzBrwuojHYa4wpdMSU4frtphRcAI_8B0000">
+<h3 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h3><img src="http://www.plantuml.com/plantuml/svg/LP7DJi9058NNdQSOMPM56vUT82zYGgeTf4apRTeYOMTO28I02mWXiGrYua-Y0WQHyYSlqndQbQ_Wq944DvF9t7FlFTyPnrLj5oZHQCO-AWZeUPck5hJsnUu-MNUSJKEtW0cKozY1PmGMBKrrSSujMpYJEKa3R3Xurx9SHCEXQFbPzG-Qqa3YTSkqSbVOTdIJX46BUM_K6uT1CmoksVrCgF_4ku50EZw5n4H0SbpJucz4q_F9AYWJCmqKk5sscTz7GCEkUb40Gg3GTPlMc_5W6liFh3UAdxhyZe2DBQnoHBgQ2uTqD8z6FXlS8E1OXivBsygSLfVRrmPjJeG69RwPLu_Rtwprc0MQMIA6gMgvectapbrob4cb_dDAIZIRiEbjz5pZUyEW4QtNI109tq915vrjvuK65Uejq1ukyG7LIrKdUpTS6csg22ZXngVllOC8QMqi8aGxSYWO12Ki5NG3ouSJalz80WNyv5OvDO_r5m00">
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <div>
+     
+     <div>
+    
+      <div style="text-align:center;color: #ccc;font-size:14px;"> ------------- End  Thank For Your Reading -------------
+     </div>
+    
+</div>
+
+     
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/08/git/" rel="prev" title="Git&nbsp使用">
+                Git&nbsp使用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="http://i0.hdslb.com/bfs/face/98f9648fa7dc6752f5dfb9897cc1a189db16178e.jpg" alt="Sykent">
+            
+              <p class="site-author-name" itemprop="name">Sykent</p>
+              <p class="site-description motion-element" itemprop="description">今天的醒来比昨晚的睡下进步一丢丢</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#活动图Hello-World"><span class="nav-number">1.</span> <span class="nav-text">活动图Hello World</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开始-结束"><span class="nav-number">2.</span> <span class="nav-text">开始/结束</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#条件语句"><span class="nav-number">3.</span> <span class="nav-text">条件语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重复循环"><span class="nav-number">4.</span> <span class="nav-text">重复循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#while-循环"><span class="nav-number">5.</span> <span class="nav-text">while 循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#并行处理"><span class="nav-number">6.</span> <span class="nav-text">并行处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注释"><span class="nav-number">7.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#颜色"><span class="nav-number">8.</span> <span class="nav-text">颜色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#箭头"><span class="nav-number">9.</span> <span class="nav-text">箭头</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Connector"><span class="nav-number">10.</span> <span class="nav-text">Connector</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组合-grouping"><span class="nav-number">11.</span> <span class="nav-text">组合(grouping)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#泳道-Swimlanes"><span class="nav-number">12.</span> <span class="nav-text">泳道(Swimlanes)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分离-detach"><span class="nav-number">13.</span> <span class="nav-text">分离(detach)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#特殊领域语言-SDL"><span class="nav-number">14.</span> <span class="nav-text">特殊领域语言(SDL)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试"><span class="nav-number">15.</span> <span class="nav-text">测试</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#按照分辨率划分"><span class="nav-number">15.1.</span> <span class="nav-text">按照分辨率划分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#按照内存划分"><span class="nav-number">15.2.</span> <span class="nav-text">按照内存划分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#闪存划分"><span class="nav-number">15.3.</span> <span class="nav-text">闪存划分</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一个完整的例子"><span class="nav-number">16.</span> <span class="nav-text">一个完整的例子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#登录流程图"><span class="nav-number">17.</span> <span class="nav-text">登录流程图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#升级"><span class="nav-number">18.</span> <span class="nav-text">升级</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Sykent</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">4.1k</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'awg24B8MDDN8kKBdo0saBusy-gzGzoHsz',
+        appKey: 'S1CQFYE8GdwTTbcKVa7MmSK7',
+        placeholder: '你的留言，是我的动力!',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("awg24B8MDDN8kKBdo0saBusy-gzGzoHsz", "S1CQFYE8GdwTTbcKVa7MmSK7");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
