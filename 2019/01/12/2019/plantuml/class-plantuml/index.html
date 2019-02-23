@@ -108,7 +108,14 @@
 <meta property="og:image" content="http://www.plantuml.com/plantuml/svg/uyfFoafDBb5mpiyjICohv89oNNCBSl8hKrEveE8A-RgwTWXH0000">
 <meta property="og:image" content="http://www.plantuml.com/plantuml/svg/uyfFoafDBb48I2qgpi_ZWlByYnBpqbEv888AkhfsC140">
 <meta property="og:image" content="http://www.plantuml.com/plantuml/svg/uyfFoafDBb7moInBvOAomnDBKekuG28AUdfsK2u0">
-<meta property="og:updated_time" content="2019-02-16T10:45:21.899Z">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/Iyv9B2vMIAr8p2t8IJNaoa_AIaqkWV6Dk000">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/utBEIImkDZ1KiAdHrLK0SmmDkI22Ha11FJsee15Kq5X12wxG62fcef0F5pE1YfagsC35JA5YPWesSFFCe6Bc2d1bvb0X2mMuAWik0000">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/Syv9B2usC5GoL5BGqjLLKCfDpAjKSWO96XegM2aav-UL96Rc5GC0">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/uqhEIImkLd1EBE9oASeiIorIq2tAJCyeqGK9ALWff805YnNik41yBPXaU4PgQWvGEYEnB5N112ghcv9VdgUh401Kdvy7b0JoYXLik000">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/yq_AIaqkKR2fqTLLS2mgIgpqoImkuUBoXmXRAQGMbYRc56jeSi4bWO8GsUXOXTISrDpKl1ANn99450N5cLMfG3q0">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/7Oen2e0m303tlYAZVi5P11SN_K2qiHQQAcagYFXtgziTTql0bA3DpDTj04OL7nrOL2nsxju2aswxJLLj7hFyTnUys_JRrm-6p3C9DD179N4a9O2b0qMpqEIPIcjHoJml">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/Iyv9B2vMS2dDpQsivb9Gg4xBJCr9gLLmL00p53HIKeiBCajI5GeIYrBpIZ9IYrEBDK7gSbDBClA12eFpSrCL81okMW00">
+<meta property="og:updated_time" content="2019-02-23T10:56:48.862Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Plantuml 学习之类视图">
 <meta name="twitter:description" content="序言&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 面向对象编程过程中如何把类与类之间的关系表述出来，最好的方法是使用统一建模语言中的类视图。从现实世界到业务模型再到设计模型到实现，类视图是关键的一环。 类图的基本元素类、接口、关系">
@@ -406,7 +413,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  688
+                  1.1k
                 </span>
               
 
@@ -422,7 +429,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  4
                 </span>
               
             </div>
@@ -452,12 +459,17 @@
 <h3 id="类图元素的关系"><a href="#类图元素的关系" class="headerlink" title="类图元素的关系"></a>类图元素的关系</h3><h4 id="实现-Realization"><a href="#实现-Realization" class="headerlink" title="实现 (Realization)"></a>实现 (Realization)</h4>表示类对接口的实现操作，类具有接口的所有行为。用带有空心三角箭头的虚线表示，箭头指向接口。如下图所示：<img src="http://www.plantuml.com/plantuml/svg/uyfFoafDBb5mpClCJSnnJ2x9pC-hvb9GI4qiqT2qAilFJ05oYahpO9nQBgW6vyGIBcHD2ZOrUdfWKG00">
 </li>
 </ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">object AnimalAction&#123;</span><br><span class="line">  eat():void</span><br><span class="line">  run():void</span><br><span class="line">&#125;</span><br><span class="line">object Cat</span><br><span class="line">AnimalAction &lt;|.. Cat</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure>
 <h4 id="泛化-Generalization"><a href="#泛化-Generalization" class="headerlink" title="泛化 (Generalization)"></a>泛化 (Generalization)</h4><p>类或接口之间的继续，表示通用与具体的差异。用带有空心三角箭头的实线表示，箭头指向父类。如下图所示：</p>
 <img src="http://www.plantuml.com/plantuml/svg/uyfFoafDBb5mAohDBAdcKb08BYdAp4jNo4lCJKNmalDpyekuQhcWYXqB2d9IqHGhs2ee9OB4bT2qWIIAKbEKWDh1bYZOrEZgGepW0W00">
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">object Fruit&#123;</span><br><span class="line">  String name</span><br><span class="line">  String color</span><br><span class="line">&#125;</span><br><span class="line">object Apple&#123;</span><br><span class="line">  String name = &quot;apple&quot;</span><br><span class="line">  String color = &quot;red&quot;</span><br><span class="line">&#125;</span><br><span class="line">Fruit &lt;|-- Apple</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure>
 <h4 id="组合-（Composition"><a href="#组合-（Composition" class="headerlink" title="组合 （Composition)"></a>组合 （Composition)</h4><p>整体与部分的关系，部分不能离开整体而独立存在。整体和部分的生命周期一样，同生共死，相当伟大。用带实心的菱形的实线表示，菱形指向整体。如下图所示：<br><img src="http://www.plantuml.com/plantuml/svg/uyfFoafDBb5mpiyjA2r9BUA2yhrJAvFo4ujIk60I2bgwkdO8OG00"></p>
-<h4 id="聚合-Aggregation"><a href="#聚合-Aggregation" class="headerlink" title="聚合 (Aggregation)"></a>聚合 (Aggregation)</h4><p>整体与部分的关系，部分可以离开整体而独立存在。整体对部分只有使用权，整体和部分的生命周期相互独立，可以同甘共苦也可老死不相往来。用带空心的菱形的实线表示，菱形指向整体。如下图所示：<br><img src="http://www.plantuml.com/plantuml/svg/uyfFoafDBb5mpiyjICohv89oNNCBSl8hKrEveE8A-RgwTWXH0000"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">object Computer</span><br><span class="line">object Keyboard</span><br><span class="line">Computer *--&gt; Keyboard</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure>
+<h4 id="聚合-Aggregation"><a href="#聚合-Aggregation" class="headerlink" title="聚合 (Aggregation)"></a>聚合 (Aggregation)</h4><p>整体与部分的关系，部分可以离开整体而独立存在。整体对部分只有使用权，整体和部分的生命周期相互独立，可以同甘共苦也可老死不相往来。用带空心的菱形的实线表示，菱形指向整体。如下图所示：<br><img src="http://www.plantuml.com/plantuml/svg/uyfFoafDBb5mpiyjICohv89oNNCBSl8hKrEveE8A-RgwTWXH0000"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">object Company</span><br><span class="line">object Employee</span><br><span class="line">Company o--&gt; Employee</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
 <h4 id="关联-Association"><a href="#关联-Association" class="headerlink" title="关联 (Association)"></a>关联 (Association)</h4><p>同级类之间的引用，彼此不存在包含关系,引用者知道被引用者的属性和行为。关联可以是双向的也可以是单向的，在java种关联关系一般用成员变量来实现。<br>用带普通箭头的实线表示,箭头指向被引用者。如下图所示：<br><img src="http://www.plantuml.com/plantuml/svg/uyfFoafDBb48I2qgpi_ZWlByYnBpqbEv888AkhfsC140"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">object Person</span><br><span class="line">object Orange</span><br><span class="line">Person --&gt; Orange</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure>
 <h4 id="依赖-Dependency"><a href="#依赖-Dependency" class="headerlink" title="依赖 (Dependency)"></a>依赖 (Dependency)</h4><p>一个类的实现依赖另外一个类的数据。<br>用带普通箭头的虚线表示，箭头指向被使用者。如下图所示:<br><img src="http://www.plantuml.com/plantuml/svg/uyfFoafDBb7moInBvOAomnDBKekuG28AUdfsK2u0"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">object Live</span><br><span class="line">object Water</span><br><span class="line">Live ..&gt; Water</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
 <li><strong>实现:</strong> 类实现接口。</li>
 <li><strong>泛化:</strong> 类或者接口的继承。</li>
@@ -467,6 +479,18 @@
 <li><strong>依赖:</strong> 一个类用到另外一个类的数据。</li>
 </ul>
 <p><strong>关系的强到弱顺序：</strong> 泛化 = 实现 &gt; 组合 &gt; 聚合 &gt; 关联 &gt; 依赖。</p>
+<h3 id="类视图的基础"><a href="#类视图的基础" class="headerlink" title="类视图的基础"></a>类视图的基础</h3><h4 id="plantuml-类语法"><a href="#plantuml-类语法" class="headerlink" title="plantuml 类语法"></a>plantuml 类语法</h4><ul>
+<li>对象声明 class 或 object<img src="http://www.plantuml.com/plantuml/svg/Iyv9B2vMIAr8p2t8IJNaoa_AIaqkWV6Dk000">
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">class example1</span><br><span class="line">object example2</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="六种基础关系"><a href="#六种基础关系" class="headerlink" title="六种基础关系"></a>六种基础关系</h4><img src="http://www.plantuml.com/plantuml/svg/utBEIImkDZ1KiAdHrLK0SmmDkI22Ha11FJsee15Kq5X12wxG62fcef0F5pE1YfagsC35JA5YPWesSFFCe6Bc2d1bvb0X2mMuAWik0000">
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">Class01 &lt;|-- Class11</span><br><span class="line">Class02 &lt;|.. Class12</span><br><span class="line">Class03 *-- Class13</span><br><span class="line">Class04 o-- Class14</span><br><span class="line">Class05 &lt;-- Class15</span><br><span class="line">Class06 &lt;.. Class16</span><br><span class="line">Class07 -- Class17</span><br><span class="line">Class08 .. Class18</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure>
+<h3 id="关系上的标识"><a href="#关系上的标识" class="headerlink" title="关系上的标识"></a>关系上的标识</h3><p>在关系之间使用标签来说明时, 使用 :后接 标签文字。<br>对元素的说明，你可以在每一边使用 “” 来说明<br><img src="http://www.plantuml.com/plantuml/svg/Syv9B2usC5GoL5BGqjLLKCfDpAjKSWO96XegM2aav-UL96Rc5GC0"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">Class01&quot;1&quot; *-- &quot;many&quot;Class11 : contains</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
+<p>在标签的开始或结束位置添加&lt; 或 &gt;以表明是哪个对象作用到哪个对象上。<br><img src="http://www.plantuml.com/plantuml/svg/uqhEIImkLd1EBE9oASeiIorIq2tAJCyeqGK9ALWff805YnNik41yBPXaU4PgQWvGEYEnB5N112ghcv9VdgUh401Kdvy7b0JoYXLik000"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">class Car</span><br><span class="line">Driver -right- Car : drivers &gt;</span><br><span class="line">Car *-right- Wheel : have 4 &gt;</span><br><span class="line">Car -down- Person : owns &lt;</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
+<h3 id="添加方法"><a href="#添加方法" class="headerlink" title="添加方法"></a>添加方法</h3><p>为了声明域或者方法, 可以使用后接域或者方法<br>系统会检查是否有括号来区分是域还是方法<br><img src="http://www.plantuml.com/plantuml/svg/yq_AIaqkKR2fqTLLS2mgIgpqoImkuUBoXmXRAQGMbYRc56jeSi4bWO8GsUXOXTISrDpKl1ANn99450N5cLMfG3q0"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">Object &lt;|-- ArrayList</span><br><span class="line">Object : equals()</span><br><span class="line">ArrayList : Object[] elementData</span><br><span class="line">ArrayList : size()</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
+<p>也可以使用{} 把域或者方法括起来<br>注意，这种语法对于类型/名字的顺序是非常灵活的<br><img src="http://www.plantuml.com/plantuml/svg/7Oen2e0m303tlYAZVi5P11SN_K2qiHQQAcagYFXtgziTTql0bA3DpDTj04OL7nrOL2nsxju2aswxJLLj7hFyTnUys_JRrm-6p3C9DD179N4a9O2b0qMpqEIPIcjHoJml"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">class Dummy&#123;</span><br><span class="line">  String data</span><br><span class="line">  void methods()</span><br><span class="line">&#125;</span><br><span class="line">class Flight&#123;</span><br><span class="line">  fightNumber : Interger</span><br><span class="line">   departureTime : Date</span><br><span class="line">&#125;</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
+<p>你也可以使用<code>{field}</code>或<code>{method}</code>修饰符来覆盖解析<br><img src="http://www.plantuml.com/plantuml/svg/Iyv9B2vMS2dDpQsivb9Gg4xBJCr9gLLmL00p53HIKeiBCajI5GeIYrBpIZ9IYrEBDK7gSbDBClA12eFpSrCL81okMW00"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">class Dummy&#123;</span><br><span class="line">  &#123;field&#125; A field (despite parentheses)</span><br><span class="line">  &#123;method&#125; Some method</span><br><span class="line">&#125;</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
 <p>待续，后面剧情更精彩，敬请期待！</p>
 
       
@@ -599,7 +623,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -610,7 +634,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -654,7 +678,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#序言"><span class="nav-number">1.</span> <span class="nav-text">序言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类图的基本元素"><span class="nav-number">2.</span> <span class="nav-text">类图的基本元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类图元素的关系"><span class="nav-number">3.</span> <span class="nav-text">类图元素的关系</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#实现-Realization"><span class="nav-number">3.1.</span> <span class="nav-text">实现 (Realization)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#泛化-Generalization"><span class="nav-number">3.2.</span> <span class="nav-text">泛化 (Generalization)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#组合-（Composition"><span class="nav-number">3.3.</span> <span class="nav-text">组合 （Composition)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#聚合-Aggregation"><span class="nav-number">3.4.</span> <span class="nav-text">聚合 (Aggregation)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联-Association"><span class="nav-number">3.5.</span> <span class="nav-text">关联 (Association)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#依赖-Dependency"><span class="nav-number">3.6.</span> <span class="nav-text">依赖 (Dependency)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#序言"><span class="nav-number">1.</span> <span class="nav-text">序言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类图的基本元素"><span class="nav-number">2.</span> <span class="nav-text">类图的基本元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类图元素的关系"><span class="nav-number">3.</span> <span class="nav-text">类图元素的关系</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#实现-Realization"><span class="nav-number">3.1.</span> <span class="nav-text">实现 (Realization)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#泛化-Generalization"><span class="nav-number">3.2.</span> <span class="nav-text">泛化 (Generalization)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#组合-（Composition"><span class="nav-number">3.3.</span> <span class="nav-text">组合 （Composition)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#聚合-Aggregation"><span class="nav-number">3.4.</span> <span class="nav-text">聚合 (Aggregation)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联-Association"><span class="nav-number">3.5.</span> <span class="nav-text">关联 (Association)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#依赖-Dependency"><span class="nav-number">3.6.</span> <span class="nav-text">依赖 (Dependency)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类视图的基础"><span class="nav-number">5.</span> <span class="nav-text">类视图的基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#plantuml-类语法"><span class="nav-number">5.1.</span> <span class="nav-text">plantuml 类语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#六种基础关系"><span class="nav-number">5.2.</span> <span class="nav-text">六种基础关系</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关系上的标识"><span class="nav-number">6.</span> <span class="nav-text">关系上的标识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加方法"><span class="nav-number">7.</span> <span class="nav-text">添加方法</span></a></li></ol></div>
             
 
           </div>
@@ -688,7 +712,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">4.5k</span>
+    <span title="Site words total count">5.8k</span>
   
 </div>
 
