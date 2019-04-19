@@ -95,17 +95,17 @@
 
 
 
-<meta name="description" content="序言&amp;emsp;&amp;emsp;这篇逐一介绍设计模式中的创建型模式，分别是单例模式、工厂方法模式、抽象工厂模式、原型模式合创建者模式。 单例模式(Singleton)&amp;emsp;&amp;emsp;单例模式比较简单，主要的使用场景是：系统通用的使用，例如：数据库的链接、调用，日志的打印等。&amp;emsp;&amp;emsp;为了避免多线程调用引起多次创建的问题，一般创建单例模式都是使用，双检测锁机制的单例模式。;代码示例">
+<meta name="description" content="序言&amp;emsp;&amp;emsp;这篇逐一介绍设计模式中的创建型模式，分别是单例模式、工厂方法模式、抽象工厂模式、原型模式合创建者模式。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="设计模式《上》">
 <meta property="og:url" content="http://yoursite.com/2019/03/03/2019/design_mode/设计模式《上》/index.html">
 <meta property="og:site_name" content="仗键走天涯">
-<meta property="og:description" content="序言&amp;emsp;&amp;emsp;这篇逐一介绍设计模式中的创建型模式，分别是单例模式、工厂方法模式、抽象工厂模式、原型模式合创建者模式。 单例模式(Singleton)&amp;emsp;&amp;emsp;单例模式比较简单，主要的使用场景是：系统通用的使用，例如：数据库的链接、调用，日志的打印等。&amp;emsp;&amp;emsp;为了避免多线程调用引起多次创建的问题，一般创建单例模式都是使用，双检测锁机制的单例模式。;代码示例">
+<meta property="og:description" content="序言&amp;emsp;&amp;emsp;这篇逐一介绍设计模式中的创建型模式，分别是单例模式、工厂方法模式、抽象工厂模式、原型模式合创建者模式。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-06T02:17:10.751Z">
+<meta property="og:updated_time" content="2019-04-19T09:16:08.806Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="设计模式《上》">
-<meta name="twitter:description" content="序言&amp;emsp;&amp;emsp;这篇逐一介绍设计模式中的创建型模式，分别是单例模式、工厂方法模式、抽象工厂模式、原型模式合创建者模式。 单例模式(Singleton)&amp;emsp;&amp;emsp;单例模式比较简单，主要的使用场景是：系统通用的使用，例如：数据库的链接、调用，日志的打印等。&amp;emsp;&amp;emsp;为了避免多线程调用引起多次创建的问题，一般创建单例模式都是使用，双检测锁机制的单例模式。;代码示例">
+<meta name="twitter:description" content="序言&amp;emsp;&amp;emsp;这篇逐一介绍设计模式中的创建型模式，分别是单例模式、工厂方法模式、抽象工厂模式、原型模式合创建者模式。">
 
 
 
@@ -437,6 +437,7 @@
 
       
         <h3 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h3><p>&emsp;&emsp;这篇逐一介绍设计模式中的创建型模式，分别是单例模式、工厂方法模式、抽象工厂模式、原型模式合创建者模式。</p>
+<a id="more"></a>
 <h3 id="单例模式-Singleton"><a href="#单例模式-Singleton" class="headerlink" title="单例模式(Singleton)"></a>单例模式(Singleton)</h3><p>&emsp;&emsp;单例模式比较简单，主要的使用场景是：系统通用的使用，例如：数据库的链接、调用，日志的打印等。<br>&emsp;&emsp;为了避免多线程调用引起多次创建的问题，一般创建单例模式都是使用，双检测锁机制的单例模式。;<br>代码示例：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Sykent.Lao e-mail:sykent.lao@gmail.com blog:https://sykent.github.io/</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@version</span> 1.0</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@since</span> 2019/03/03</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Singleton INSTANCE;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">// no - op by default</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstace</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (INSTANCE == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">synchronized</span> (Singleton.class) &#123;</span><br><span class="line">                <span class="keyword">if</span> (INSTANCE == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    INSTANCE = <span class="keyword">new</span> Singleton();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>待续，后面剧情更精彩，敬请期待！</p>
 
@@ -570,7 +571,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -581,7 +582,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -659,7 +660,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">14.9k</span>
+    <span title="Site words total count">15.1k</span>
   
 </div>
 

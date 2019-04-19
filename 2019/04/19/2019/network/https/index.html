@@ -95,16 +95,19 @@
 
 
 
-<meta name="description" content="今天的醒来比昨晚的睡下进步一丢丢">
-<meta property="og:type" content="website">
-<meta property="og:title" content="仗键走天涯">
-<meta property="og:url" content="http://yoursite.com/categories/笔记/index.html">
+<meta name="description" content="密码学基础明文：未加密的原始数据。密文：明文通过某种加密算法加密的数据。密钥：是一种参数，是加密算法中输入的参数。对称加密：又称私钥加密，加密和解密使用相同的私钥。加解密速度快，常用算法有DES、3DES、TDEA、Blowfish、RC5和IDEA。非对称加密：有公钥和私钥之分，都可以用来加密，解密需要用相反的密钥解密。加解密速度相对慢，常用算法有RSA、Elgamal、Rabin、D-H、EC">
+<meta property="og:type" content="article">
+<meta property="og:title" content="https 请求原理">
+<meta property="og:url" content="http://yoursite.com/2019/04/19/2019/network/https/index.html">
 <meta property="og:site_name" content="仗键走天涯">
-<meta property="og:description" content="今天的醒来比昨晚的睡下进步一丢丢">
+<meta property="og:description" content="密码学基础明文：未加密的原始数据。密文：明文通过某种加密算法加密的数据。密钥：是一种参数，是加密算法中输入的参数。对称加密：又称私钥加密，加密和解密使用相同的私钥。加解密速度快，常用算法有DES、3DES、TDEA、Blowfish、RC5和IDEA。非对称加密：有公钥和私钥之分，都可以用来加密，解密需要用相反的密钥解密。加解密速度相对慢，常用算法有RSA、Elgamal、Rabin、D-H、EC">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/TLBBJi905DttA_e1yWCiD8HFSEksYIQ6A5JNBU5HIGcLWCWZF9KIq1QY0Nc4VWozC-sAN_2sWmqGJ6RHtZbtpkDUBXhXGw5p_bA8FmfnFioxNHaApuufs_F-TbK3DGtQYEgoMtpVIF9L3D8V-0b5bK5eBGNfgRryiQqEaSsDbEIYjpT2J3ny5JGJSeEuSFyW9CJmjIZU9RZTfOVRjOHvUzLs9JbWTwog_JDalqW3HXF64_9gCX7RbOfw2aEluCkq5nbOA_1MOsBm7lh9G2TpHXeBqapvhOwL9OqMgKpToZVzVCAphns3mJGar92DHX1FUf8xt7EjAUIhJ2ITsoKOU72i4jIR3EX9q_eCUt4ocPqv7u4ijDIo5pgOSwgF8TS6CuC7lPvHG_9AHfSeCpeoMPKbC9_Iqk0l97ywVYDcIPTLHhGVzX4rcwsZzx35IsnT0UMOv-IiaFG8Xh99UKpoXcFLdOwwx-8WsVzV26IWBLy8QUGXru7g04U7cu71CuOpVuVGmenCac2eHD6ytVi5">
+<meta property="og:updated_time" content="2019-04-19T09:15:17.715Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="仗键走天涯">
-<meta name="twitter:description" content="今天的醒来比昨晚的睡下进步一丢丢">
+<meta name="twitter:title" content="https 请求原理">
+<meta name="twitter:description" content="密码学基础明文：未加密的原始数据。密文：明文通过某种加密算法加密的数据。密钥：是一种参数，是加密算法中输入的参数。对称加密：又称私钥加密，加密和解密使用相同的私钥。加解密速度快，常用算法有DES、3DES、TDEA、Blowfish、RC5和IDEA。非对称加密：有公钥和私钥之分，都可以用来加密，解密需要用相反的密钥解密。加解密速度相对慢，常用算法有RSA、Elgamal、Rabin、D-H、EC">
+<meta name="twitter:image" content="http://www.plantuml.com/plantuml/svg/TLBBJi905DttA_e1yWCiD8HFSEksYIQ6A5JNBU5HIGcLWCWZF9KIq1QY0Nc4VWozC-sAN_2sWmqGJ6RHtZbtpkDUBXhXGw5p_bA8FmfnFioxNHaApuufs_F-TbK3DGtQYEgoMtpVIF9L3D8V-0b5bK5eBGNfgRryiQqEaSsDbEIYjpT2J3ny5JGJSeEuSFyW9CJmjIZU9RZTfOVRjOHvUzLs9JbWTwog_JDalqW3HXF64_9gCX7RbOfw2aEluCkq5nbOA_1MOsBm7lh9G2TpHXeBqapvhOwL9OqMgKpToZVzVCAphns3mJGar92DHX1FUf8xt7EjAUIhJ2ITsoKOU72i4jIR3EX9q_eCUt4ocPqv7u4ijDIo5pgOSwgF8TS6CuC7lPvHG_9AHfSeCpeoMPKbC9_Iqk0l97ywVYDcIPTLHhGVzX4rcwsZzx35IsnT0UMOv-IiaFG8Xh99UKpoXcFLdOwwx-8WsVzV26IWBLy8QUGXru7g04U7cu71CuOpVuVGmenCac2eHD6ytVi5">
 
 
 
@@ -134,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/笔记/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/19/2019/network/https/">
 
 
 
 
 
-  <title>分类: 笔记 | 仗键走天涯</title>
+  <title>https 请求原理 | 仗键走天涯</title>
   
 
 
@@ -174,7 +177,7 @@
 <script type="text/javascript" src="/dist/APlayer.min.js"></script>
 <script type="text/javascript" src="/dist/music.js"></script>
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <a href="https://github.com/sykent"><img style="position :absolute; top : 0; right : 0" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
@@ -280,53 +283,231 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>笔记<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/19/2019/network/https/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Sykent Lao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/sykent/blogimage/master/head.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="仗键走天涯">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/12/01/activity/" itemprop="url">
-              
-                <span itemprop="name">plantuml 实例</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">https 请求原理</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-01T00:00:00+08:00" content="2018-12-01">
-          12-01
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-19T00:00:00+08:00">
+                2019-04-19
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/网络/" itemprop="url" rel="index">
+                    <span itemprop="name">网络</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/04/19/2019/network/https/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/19/2019/network/https/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/04/19/2019/network/https/" class="leancloud_visitors" data-flag-title="https 请求原理">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  224
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="密码学基础"><a href="#密码学基础" class="headerlink" title="密码学基础"></a>密码学基础</h3><p>明文：未加密的原始数据。<br>密文：明文通过某种加密算法加密的数据。<br>密钥：是一种参数，是加密算法中输入的参数。<br>对称加密：又称私钥加密，加密和解密使用相同的私钥。加解密速度快，常用算法有DES、3DES、TDEA、Blowfish、RC5和IDEA。<br>非对称加密：有公钥和私钥之分，都可以用来加密，解密需要用相反的密钥解密。加解密速度相对慢，常用算法有RSA、Elgamal、Rabin、D-H、ECC（椭圆曲线加密算法）等。</p>
+<a id="more"></a>
+<h3 id="https解析"><a href="#https解析" class="headerlink" title="https解析"></a>https解析</h3><p>证书认证中心（Certificate Authority），简称CA<br>数字证书: CA有一对公钥和私钥，CA用私钥对要验证的公钥进行非对称加密，加上证书的过期时间、颁发给、颁发者等信息，就组成了数字证书。</p>
+<img src="http://www.plantuml.com/plantuml/svg/TLBBJi905DttA_e1yWCiD8HFSEksYIQ6A5JNBU5HIGcLWCWZF9KIq1QY0Nc4VWozC-sAN_2sWmqGJ6RHtZbtpkDUBXhXGw5p_bA8FmfnFioxNHaApuufs_F-TbK3DGtQYEgoMtpVIF9L3D8V-0b5bK5eBGNfgRryiQqEaSsDbEIYjpT2J3ny5JGJSeEuSFyW9CJmjIZU9RZTfOVRjOHvUzLs9JbWTwog_JDalqW3HXF64_9gCX7RbOfw2aEluCkq5nbOA_1MOsBm7lh9G2TpHXeBqapvhOwL9OqMgKpToZVzVCAphns3mJGar92DHX1FUf8xt7EjAUIhJ2ITsoKOU72i4jIR3EX9q_eCUt4ocPqv7u4ijDIo5pgOSwgF8TS6CuC7lPvHG_9AHfSeCpeoMPKbC9_Iqk0l97ywVYDcIPTLHhGVzX4rcwsZzx35IsnT0UMOv-IiaFG8Xh99UKpoXcFLdOwwx-8WsVzV26IWBLy8QUGXru7g04U7cu71CuOpVuVGmenCac2eHD6ytVi5">
+<p><a href="https://blog.csdn.net/iispring/article/details/51615631?tdsourcetag=s_pcqq_aiomsg" target="_blank" rel="noopener">参考网站</a></p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <div>
+     
+     <div>
+    
+      <div style="text-align:center;color: #ccc;font-size:14px;"> ------------- End  Thank For Your Reading -------------
+     </div>
+    
+</div>
+
+     
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/26/2019/读书笔记/财务自由之路《指数基金》/" rel="next" title="财务自由之路之《指数基金》">
+                <i class="fa fa-chevron-left"></i> 财务自由之路之《指数基金》
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -334,6 +515,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -354,8 +542,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
 
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -418,6 +615,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#密码学基础"><span class="nav-number">1.</span> <span class="nav-text">密码学基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#https解析"><span class="nav-number">2.</span> <span class="nav-text">https解析</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -574,6 +787,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
